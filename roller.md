@@ -15,9 +15,13 @@ roller config init --interactive
 ```
 
 > 1- İsim verin mesela, `myruesrollapp_6419-2` gibi.
+
 > 2- Token ismi belirleyin
+
 > 3- Supply belirleyin
+
 > 4- Roller tipi seçin (size kalmıs)
+
 > 5- Zincir seçin (size kalmıs)
 
 > Sonra size verilen çıktıda `3 adres` olacak `2 tanesi dym` adresi `1 tanesi avail veya celestia` olacak, bunlar içinde `faucetten` token alın.
