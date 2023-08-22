@@ -36,3 +36,5 @@ roller run
 
 ![image](https://github.com/ruesandora/dYmension-rollApp/assets/101149671/d04bd72a-f73f-40f8-bb6b-0ac834b90610)
 
+
+> DURUMA GÖRE DEVAMI OLURSA GELECEK.
