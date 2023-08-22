@@ -4,7 +4,9 @@
 
 ```console
 curl -L https://dymensionxyz.github.io/roller/install.sh | bash
-```console
+```
+
+```
 roller version
 ```
 
