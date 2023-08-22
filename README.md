@@ -2,9 +2,15 @@
 
 > Validatör Kurulumu..
 
+> Eğer dYmensionda rolünüz yoksa katılamazsınız rollapps fam rolü.
+
 > Validatörlere ayrılan token sayısı %1 supply'ın %40'ıdır.
 
 > Platforma ayrılan %1 supply'ın %10'ıdır. [Buradan kullanabilirsin](https://portal.dymension.xyz/ibc)
+
+> Bence roller kurarak başlayın.
+
+> Community Kanalları: [Duyuru](https://t.me/RuesAnnouncement) - [Chat](https://t.me/RuesChat) - [Resmi dYmension kanalı](https://t.me/dYmensionTurkish) 
 
 <h1 align="center"> Donanım ve Gereksinimler </h1>
 
