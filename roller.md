@@ -39,7 +39,8 @@ roller run
 > Sonra karşınıza bir ekran çıkacak ve `channel-id` arayacaksınız.
 > Erkenciyseniz ve benim gibi şanslıysanız `channel-idinizi bulursunuz`, bulamazsanız sıkıntı. `(bundan dolayı ilk burdan başlayın dedim)`
 
-![image](https://github.com/ruesandora/dYmension-rollApp/assets/101149671/d04bd72a-f73f-40f8-bb6b-0ac834b90610)
+![image](https://github.com/ruesandora/dYmension-rollApp/assets/101149671/b2df6d80-bb1c-407c-ac45-641426acf40c)
+
 
 
 > DURUMA GÖRE DEVAMI OLURSA GELECEK.
