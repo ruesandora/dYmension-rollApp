@@ -8,7 +8,7 @@
 
 > Platforma ayrılan %1 supply'ın %10'ıdır. [Buradan kullanabilirsin](https://portal.dymension.xyz/ibc)
 
-> Bence roller kurarak başlayın.
+> Bence [roller](https://github.com/ruesandora/dYmension-rollApp/blob/main/roller.md) kurarak başlayın.
 
 > Community Kanalları: [Duyuru](https://t.me/RuesAnnouncement) - [Chat](https://t.me/RuesChat) - [Resmi dYmension kanalı](https://t.me/dYmensionTurkish) 
 
