@@ -1,5 +1,24 @@
-Dymension
+<h1 align="center"> dYmension </h1>
 
+> Validatör Kurulumu..
+
+> Validatörlere ayrılan token sayısı %1 supply'ın %40'ıdır.
+
+> Platforma ayrılan %1 supply'ın %10'ıdır. [Buradan kullanabilirsin](https://portal.dymension.xyz/ibc)
+
+<h1 align="center"> Donanım ve Gereksinimler </h1>
+
+> Sunucu olarak [Hetzner Kullanıyorum](https://github.com/ruesandora/Hetzner/blob/main/README.md)
+
+```sh
+# Benim kullandığım: 
+4 CPU - 8 RAM - 150 SSD
+
+# Dökümasyon önerisi:
+4 CPU - 16 RAM - 500 SSD
+```
+
+<h1 align="center"> Kurulum </h1>
 
 ```console
 # Güncellemeler:
@@ -24,6 +43,8 @@ source $HOME/.profile
 go version
 ```
 
+<h1 align="center"> Dymensionu yüklüyoruz </h1>
+
 ```console
 sudo apt install git
 git clone https://github.com/dymensionxyz/dymension.git
@@ -38,6 +59,8 @@ dymd version
 # Node isminizi girin tırnakları kaldırın
 dymd init <Nodeİsmi> --chain-id=froopyland_100-1
 ```
+
+<h1 align="center"> Gerekli ayarlamalar </h1>
 
 ```console
 # seedler
@@ -63,6 +86,9 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 indexer="null" && \
 sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.dymension/config/config.toml
 ```
+
+<h1 align="center"> Servis dosyası oluşturma </h1>
+
 ```console
 # Servis dosyası
 sudo tee /etc/systemd/system/dymd.service > /dev/null <<EOF
@@ -86,6 +112,8 @@ sudo systemctl enable dymd
 sudo systemctl restart dymd
 ```
 
+<h1 align="center"> Node'u başlatma </h1>
+
 ```console
 # Hızlı eşleşmek için:
 cd $HOME
@@ -98,3 +126,37 @@ mv $HOME/.dymension/priv_validator_state.json.backup $HOME/.dymension/data/priv_
 wget -O $HOME/.dymension/config/addrbook.json "https://raw.githubusercontent.com/obajay/nodes-Guides/main/Projects/Dymension/addrbook.json"
 sudo systemctl restart dymd && journalctl -u dymd -f -o cat
 ```
+
+<h1 align="center"> Cüzdan oluşturma </h1>
+
+```console
+dymd keys add <cüzdanİsmi>
+```
+
+> Faucetten token alın.
+
+> SYNC olunca devam edebilirsiniz.
+
+<h1 align="center"> Validatör oluşturma </h1>
+
+> Kendinize göre ayarlayın:
+
+```console
+dymd tx staking create-validator \
+--amount 1000000udym \
+--pubkey $(dymd tendermint show-validator) \
+--moniker "Validatörİsmi" \
+--details "" \
+--chain-id froopyland_100-1 \
+--commission-rate 0.05 \
+--commission-max-rate 0.20 \
+--commission-max-change-rate 0.01 \
+--min-self-delegation 1 \
+--from rues \
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0.025udym \
+-y
+```
+
+> Explorer: [Burada](https://explorer.stavr.tech/dymension-testnet/staking/dymvaloper1ysp32qrrw3fzmqsneekqzmkux2rctmxxwvxq05)
